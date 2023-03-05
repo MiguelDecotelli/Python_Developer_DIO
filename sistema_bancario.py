@@ -39,10 +39,16 @@ def operacoes_bancarias(menu):
                 print("Limite de saques diários atingido.")
 
         elif opcao == "e":
-            extrato = extrato[:-1].replace(",", ".")
-            print(f"Extrato:\n{extrato}")
+            if extrato == "":
+                print(" EXTRATO ".center(30, "#"), end='\n\n')
+                print("Extrato sem movimentações")
+            else:
+                extrato = extrato[:-1].replace(",", ".")
+                print(" EXTRATO ".center(30, "#"), end='\n\n')
+                print(f"{extrato}\n\nSaldo: R$ {saldo:.2f}\n")
 
         elif opcao == "q":
+            print("\nVolte sempre! Você é muito importante para nós!\n")
             break
         else:
             print("Operação inválida, por favor selecione novamente a opção desejada")
