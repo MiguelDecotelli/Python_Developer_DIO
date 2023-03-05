@@ -1,7 +1,6 @@
 def main():
     operacoes_bancarias(menu)
 
-
 def operacoes_bancarias(menu):
     saldo = 0
     limite = 500
