@@ -74,7 +74,6 @@ def cadastrar_cliente(clientes):
     clientes.append({"Nome": nome, "Data de nascimento": data_nascimento,
                      "CPF": cpf, "Endereco": endereco})
     print("Cliente cadastrado com sucesso")
-    print(clientes)
 
 
 def criar_conta(agencia, conta_corrente, clientes):
