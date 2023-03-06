@@ -1,7 +1,6 @@
 def main():
     operacoes_bancarias(menu_acesso)
 
-
 def operacoes_bancarias(menu):
     AGENCIA = '0001'
     LIMITE_SAQUES = 3
